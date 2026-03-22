@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/askdba/mysql-mcp-server/internal/sshtunnel"
+	"mysql-mcp-server/internal/sshtunnel"
 	"github.com/go-sql-driver/mysql"
 	_ "github.com/go-sql-driver/mysql"
 )

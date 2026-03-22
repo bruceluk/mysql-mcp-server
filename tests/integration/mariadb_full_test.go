@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/askdba/mysql-mcp-server/internal/util"
+	"mysql-mcp-server/internal/util"
 	_ "github.com/go-sql-driver/mysql"
 )
 

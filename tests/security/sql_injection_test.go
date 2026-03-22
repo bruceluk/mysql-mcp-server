@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/askdba/mysql-mcp-server/internal/util"
+	"mysql-mcp-server/internal/util"
 )
 
 // TestSQLInjection_BasicAttempts tests basic SQL injection patterns

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/askdba/mysql-mcp-server/internal/util"
+	"mysql-mcp-server/internal/util"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 

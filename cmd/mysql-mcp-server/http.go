@@ -15,7 +15,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/askdba/mysql-mcp-server/internal/api"
+	"mysql-mcp-server/internal/api"
 )
 
 const maxJSONRequestBodyBytes int64 = 1 << 20 // 1 MiB

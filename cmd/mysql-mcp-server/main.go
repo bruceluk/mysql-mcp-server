@@ -11,8 +11,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 
-	"github.com/askdba/mysql-mcp-server/internal/config"
-	"github.com/askdba/mysql-mcp-server/internal/util"
+	"mysql-mcp-server/internal/config"
+	"mysql-mcp-server/internal/util"
 )
 
 // Version information (injected at build time via ldflags).

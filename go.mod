@@ -1,4 +1,4 @@
-module github.com/askdba/mysql-mcp-server
+module mysql-mcp-server
 
 go 1.24.0
 

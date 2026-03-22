@@ -9,10 +9,11 @@ import (
 	"sync"
 	"time"
 
+	"mysql-mcp-server/internal/config"
+	"mysql-mcp-server/internal/sshtunnel"
+	"mysql-mcp-server/internal/util"
+
 	"github.com/go-sql-driver/mysql"
-	"github.com/askdba/mysql-mcp-server/internal/config"
-	"github.com/askdba/mysql-mcp-server/internal/sshtunnel"
-	"github.com/askdba/mysql-mcp-server/internal/util"
 )
 
 // ServerType represents the type of the database server.
@@ -57,7 +58,7 @@ func (cm *ConnectionManager) AddConnectionWithPoolConfig(connCfg config.Connecti
 	if connCfg.SSH != nil && connCfg.SSH.Host != "" && connCfg.SSH.User != "" && connCfg.SSH.KeyPath != "" {
 		mysqlCfg, err := mysql.ParseDSN(dsn)
 		if err != nil {
-			return fmt.Errorf("failed to parse DSN for SSH tunnel %s: %w", connCfg.Name, err)
+			return fmt.Errorf("failed to parse DSN for SSH tunnel %s: invalid DSN format", connCfg.Name)
 		}
 		remoteAddr := mysqlCfg.Addr
 		if remoteAddr == "" {

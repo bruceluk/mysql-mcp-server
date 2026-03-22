@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/askdba/mysql-mcp-server/internal/config"
+	"mysql-mcp-server/internal/config"
 )
 
 func TestNewConnectionManager(t *testing.T) {

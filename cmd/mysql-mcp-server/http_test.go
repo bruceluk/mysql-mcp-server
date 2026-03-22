@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/askdba/mysql-mcp-server/internal/api"
-	"github.com/askdba/mysql-mcp-server/internal/config"
+	"mysql-mcp-server/internal/api"
+	"mysql-mcp-server/internal/config"
 )
 
 // httpMockResult holds the results of setupHTTPTest for tests that need access to the mock DB.

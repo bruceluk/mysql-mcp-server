@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/askdba/mysql-mcp-server/internal/util"
+	"mysql-mcp-server/internal/util"
 )
 
 // TestValidator_PreparedStatementSyntax tests prepared statement blocking
